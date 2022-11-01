@@ -1,0 +1,559 @@
+@charset "utf-8";
+
+/* main{} */
+article > div{
+    left: 200px;
+    position: absolute;
+    overflow:hidden;
+    width: calc(100% - 200px);
+}
+
+/* 슬라이드 영역 */
+.slide_main{
+    width: 700%;
+    display: flex;
+}
+.slide_main > li{
+    width: 100%;
+}
+.slide_main img{
+    width: 100%;
+}
+.slide_main a{
+    display: block;
+    position: relative;
+}
+.slide_main .slide_title_txt{
+    position: absolute;
+    top: 30%; left: 10%;
+}
+.slide_main .slide_title_txt > h2,
+.slide_main .slide_title_txt > p{
+    color: #fff;
+}
+.slide_main .slide_title_txt > h2{
+    font-family: "NEXON Lv2 Gothic Bold";
+    font-size: 400%;
+}
+.slide_main .slide_title_txt > p{
+    font-family: "NEXON Lv2 Gothic Light";
+    padding-top: 15px;
+    font-size: 16px;
+}
+.slide_main .Genre_txt{
+    font-family: "NEXON Lv2 Gothic Bold";
+    position: absolute;
+    bottom: 20%; left: 10%;
+    font-size: 20px;
+    color: #878786;
+}
+.slide_bottom{
+    position: absolute;
+    left: 50%;
+    width: 708px;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.slide_bottom li{
+    display: block;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 50px;
+    color: #878786;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    border-left: 1px solid rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slide_bottom .on{
+    background: rgba(0, 152, 216, 0.25);
+    color: #eee;
+}
+.slide_bottom li:last-child{
+    border-right: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+/* 브랜드 영역 */
+.brand_box{
+    height: 900px;
+    display: block;
+}
+.brand_main{
+    margin-top: 80px;
+}
+.brand_main h2{
+    font-size: 65px;
+    color: #1D1D1B;
+    text-align: center;
+}
+.brand_main h2:first-child{
+    font-family: 'NEXON Lv2 Gothic Light' ;
+}
+.brand_main h2:last-child{
+    font-family: 'NEXON Lv2 Gothic bold' ;
+}
+.brand_center{
+    margin-top: 80px;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 80px auto;
+}
+.brand_center .brand_left,
+.brand_center .brand_right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.brand_center .brand_left ul{
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.brand_center .brand_left li{
+    text-align: left;
+    padding-top: 20px;
+}
+
+/* 게임 영역 */
+.game_box{
+    height: 724px;
+    display: block;
+}
+.game_top{
+    position: relative;
+    width: 100%; height: 180px;
+    background: #0098D8;
+    text-align: center;
+    /* z-index: -10; */
+}
+.game_top .game_main_logo{
+    float: left;
+    margin: 20px 20px 20px 0px;
+    width: 80px; height: 60px;
+    background-image: url('../data/03icon/Corporate\ CI_length.png');
+    background-size: 190%;
+    background-position: 50% 30%;
+}
+/* .game_top .game_main_logo img{
+    width: 300%;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+} */
+.game_top_box{
+    position: absolute;
+    width: 720px;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.game_top{
+    overflow: hidden;
+}
+.game_top .game_content{
+    margin-right: 20px;
+    float: left;
+    width: 200px;
+    display: block;
+    text-align: center;
+}
+.game_top .game_content .g_en{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 24px;
+}
+.game_top .game_content .g_ko{
+    padding-top: 10px;
+    color: #1D1D1B;
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-size: 36px;
+}
+.game_top p{
+    margin: 15px 0px;
+    float: left;
+    width: 400px;
+    font-family: 'NEXON Lv2 Gothic Light';
+    font-size: 18px;
+    color: #fff;
+    letter-spacing :1.5px;
+    line-height: 35px;
+    
+}
+.game_top p span{
+    color: #fff;
+    font-family: 'NEXON Lv2 Gothic Bold';
+}
+/* .game_top .game_content a{} */
+.game_top .game_content input{
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #00365C;
+    width: 80px; height: 25px;
+    cursor: pointer;
+}
+.game_top .game_color_box{
+    background: #CAD401;
+    position: absolute;
+    top: -500%; right: -11%;
+    width: 45%;
+    height: 1000%;
+    transform: rotate(15deg);
+}
+.gslide {
+    width: 990px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.gslide_main{
+    width: 2310px; height: 320px;
+    position: relative;
+}
+.game .slide{
+    width: 260px; height: 280px;
+    float: left;
+    margin: 20px 35px;
+    transition: 0.5s;
+}
+.game .slide .gslide_content{
+    width: 260px; height: 170px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+.game .slide .gslide_content img{
+    position: absolute;
+    height: 100%;
+    top: 0px; left: 50%;
+    transform: translateX(-50%);
+}
+.game .slide:nth-child(2) .gslide_content img,
+.game .slide:nth-child(3) .gslide_content img{
+    top: 0px; left: 0px;
+    transform: translateX(0%);
+}
+.game .slide:nth-child(6) .gslide_content img,
+.game .slide:nth-child(7) .gslide_content img{
+    top: 0px; right: 0px; left: unset;
+    transform: translateX(0%);
+}
+.game .slide .gslide_text{
+    width: 260px; height: 100px;
+    background-color: rgba(135, 135, 134, 0.5);
+    transition: 0.5s;
+}
+.game .slide .gslide_text h2,
+.game .slide .gslide_text p{
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+}
+.game .slide .gslide_text h2{
+    font-family: "NEXON Lv2 Gothic Bold";
+    padding-top: 20px;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.game .slide .gslide_text p{
+    font-size: 14px;
+    padding-top: 25px;
+    transition: 0.5s;
+}
+.game .slide_on{
+    width: 300px; height: 320px;
+    float: left;
+    margin: 0px 15px;
+}
+.game .slide_on .gslide_content{
+    width: 300px; height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.game .slide_on .gslide_text{
+    width: 300px; height: 110px;
+    background-color: rgba(135, 135, 134, 0.5);
+}
+.game .slide_on .gslide_text h2{
+    font-family: "NEXON Lv2 Gothic Bold";
+    padding-top: 23px;
+    font-size: 26px;
+}
+.game .slide_on .gslide_text p{
+    font-size: 16px;
+    padding-top: 25px;
+}
+.gslide .g_btn{
+    justify-content: center;
+    display: flex;
+}
+.gslide .g_btn > li{
+    width: 10px; height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 14px 3px 0 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.gslide .g_btn .act{
+    width: 40px;
+    border-radius: 10px;
+    background: #00365C;
+}
+.gslide i.fa{
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    cursor: pointer;
+}
+.gslide i.fa-angle-left{left: 15%;}
+.gslide i.fa-angle-right{right: 15%;}
+
+/* 뉴스영역 */
+.news{
+    height: 800px;
+    position: relative;
+}
+.news .news_back_img > h3,
+.news .news_back_img > h2{
+    text-align: center;
+    color: #fff;
+}
+.news .news_back_img h3{
+    padding-top: 40px;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.news .news_back_img h2{
+    padding-top: 50px;
+    font-size: 34px;
+}
+.news .news_back_img{
+    width: 100%;
+    height: 100%;
+    background-image: url('../data/02images/nexon_games/nexon_employment/nexon_games_culture1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.news_grid > ul{
+    width: 1120px;
+    left: 200px;
+    margin: 30px auto 0px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+    'news1 news2 news3 news4'
+    'news5 news6 news7 news8'
+    ;
+}
+.news_grid > ul:first-child{grid-area: news1;}
+.news_grid > ul:nth-child(2){grid-area: news2;}
+.news_grid > ul:nth-child(3){grid-area: news3;}
+.news_grid > ul:nth-child(4){grid-area: news4;}
+.news_grid > ul:nth-child(5){grid-area: news5;}
+.news_grid > ul:nth-child(6){grid-area: news6;}
+.news_grid > ul:nth-child(7){grid-area: news7;}
+.news_grid > ul:last-child{grid-area: news8;}
+.news_grid > ul > li{
+    width: 250px; height: 260px;
+}
+.news_grid .news_img{
+    width: 250px; height: 155px;
+    overflow: hidden;
+    position: relative;
+}
+.news_grid .news_img img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.news_grid .news_text{
+    width: 250px; height: 95px;
+    background: #fff;
+}
+.news_grid .news_text p,
+.news_grid .news_text h3{
+    padding: 12px;
+}
+.news_grid .news_text h3{
+    font-size: 20px;
+    width: calc(100%-24px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news_grid .news_text p{
+    font-size: 12px;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 정보(인재채용, 투자정보) 영역 */
+.information{
+    height: 240px;
+    position: relative;
+}
+.information .recruitment,
+.information .investment{
+    position: relative;
+    margin-top: 40px;
+    width: 50%;
+    height: 200px;
+    cursor: pointer;
+}
+.information h2{
+    font-size: 28px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+}
+.information i{
+    position: absolute;
+    display: block;
+    right: 10%;
+    bottom: 3%;
+    font-size: 100px;
+    color: #fff;
+}
+.information .recruitment{
+    float: left;
+    background: #0098D8;
+}
+.information .investment{
+    float: right;
+    background: #CAD401;
+}
+
+footer{
+    left: 200px;
+    position: absolute;
+    overflow:hidden;
+    width: calc(100% - 200px);
+}
+footer .footer_top{
+    height: 50px;
+    background: #1D1D1B;
+    border-bottom: 2px solid #ccc;
+}
+.footer_top_box{
+    width: 1100px;
+    margin: 0px auto;
+}
+.footer_top_box a{
+    font-size: 14px;
+    line-height: 50px;
+    color: #ccc;
+}
+.footer_top_box i.fab{
+    font-size: 22px;
+    line-height: 50px;
+    padding-right: 20px;
+    float: right;
+}
+.footer_top_box i.fa-youtube{
+    color: #FE0000;
+}
+.footer_top_box i.fa-twitter{
+    color: #1DA1F2;
+}
+.footer_top_box i.fa-facebook-f{
+    color: #1877F2;
+}
+footer .footer_bottom{
+    height: 260px;
+    /* background: #fff; */
+    background: #1D1D1B;
+}
+.footer_bottom_box{
+    width: 1100px;
+    position: relative;
+    margin: 0px auto;
+}
+.footer_bottom_box > ul{
+    justify-content: left;
+    padding-top: 20px;
+    display: flex;
+}
+.footer_bottom_box > ul > li:first-child{
+    border-left: 2px solid #ccc;
+}
+.footer_bottom_box > ul > li{
+    width: 100px;
+    border-right: 2px solid #ccc;
+    text-align: center;
+}
+.footer_bottom_box > ul > li > a{
+    font-size: 12px;
+    color: #ccc;
+}
+.footer_bottom_box .footer_bottom_text{
+    width: 750px; height: 40px;
+    float: left;
+    margin-top: 60px;
+    margin-right: 250px;
+}
+.footer_bottom_box .footer_bottom_text p{
+    height: 40px; width: 50%;
+    display: block;
+    float: left;
+    left: 0px;
+    color: #ccc;
+    line-height: 20px;
+    font-size: 14px;
+}
+.footer_bottom_box a img{
+    margin-top: 20px;
+}
+.footer_bottom_box > p{
+    padding-top: 10px;
+    color: #ccc;
+}
+.footer_bottom_box .familysite{
+    position: absolute;
+    width: 140px;
+    right: 0px; bottom: 0px;
+}
+.footer_bottom_box .familysite h2{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    width: 90px;
+    bottom: 0px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "NEXON Lv2 Gothic Bold";
+    cursor: pointer;
+}
+.footer_bottom_box .familysite > ul{
+    margin-bottom: 30px;
+    opacity: 0;
+    display: none;
+}
+.footer_bottom_box .familysite > ul > li{
+    background: #fff;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    padding: 0px 3px 0px 12px;
+    transition: 0.2s;
+}
+.footer_bottom_box .familysite > ul > li > a{
+    line-height: 30px;
+    color: #1D1D1B;
+    transition: 0.2s;
+}
+.footer_bottom_box .familysite > ul > li:hover{
+    background-color: #1DA1F2;
+}
+.footer_bottom_box .familysite > ul > li:hover > a{
+    color: #fff;
+}

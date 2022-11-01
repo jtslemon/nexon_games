@@ -1,0 +1,24 @@
+@charset "utf-8";
+@font-face {
+font-family: "NEXON Lv2 Gothic";
+    src: url("../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic.eot");
+    src: url("../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic.woff");
+    src: url('../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic?#iefix') format('embedded-opentype'),
+}
+@font-face {
+font-family: "NEXON Lv2 Gothic Light";
+    src: url("../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic\ Light.eot");
+    src: url("../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic\ Light.woff");
+    src: url('../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic\ Light?#iefix') format('embedded-opentype'),
+}
+@font-face {
+font-family: "NEXON Lv2 Gothic Bold";
+    src: url("../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic\ Bold.eot");
+    src: url("../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic\ Bold.woff");
+    src: url('../data/01txt/fonts/NEXON_Lv2_Gothic_total/NEXON\ Lv2\ Gothic\ Bold?#iefix') format('embedded-opentype'),
+}
+*{
+    margin: 0; padding: 0;
+    font-family: "NEXON Lv2 Gothic";
+    color: #1D1D1B;
+}
