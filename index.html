@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넥슨 게임즈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 메인 -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <!-- 레이아웃 -->
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <!-- 베이스 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+    <!-- 메인스크립트 -->
+    <script src="./scripts/main.js"></script>
+    <!-- 프리픽스 -->
+    <script src="./scripts/prefixfree.min.js"></script>
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header>
+        <div class="header_logo">
+            <a href="./nexon_games.html">
+                <img src="./images/main_logo.png" alt="넥슨 로고">
+            </a>
+        </div>
+        <div class="header_login">
+            <div class="login_area">
+                <div class="header_icon">
+                    <a href="login">
+                        <img src="./images/people.png" alt="로그인 아이콘">
+                    </a>
+                </div>
+                <a href="login.html" class="login_btn">
+                    <h2>로그인</h2>
+                </a>
+                <ul class="login_icon">
+                    <li><a href="google_login.html" class="login" id="google" title="구글"></a></li>
+                    <li><a href="facebook_login.html" class="login" id="facebook" title="페이스북"></a></li>
+                    <li><a href="naver_login.html" class="login" id="naver" title="네이버"></a></li>
+                    <li><a href="apple_login.html" class="login" id="apple" title="애플"></a></li>
+                    <li><a href="sing_up.html" id="sing_up" title="회원가입">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_search">
+            <div class="search_area">
+                <input type="search" name="검색" id="search_box" placeholder="  검색할 내용을 입력하세요.">
+                <i class="fa fa-search" title="검색"></i>
+            </div>
+        </div>
+        <div class="header_main_menu">
+            <ul>
+                <li>
+                    <a href="nexon_games_brand.html" title="넥슨게임즈">
+                        <h3>넥슨게임즈</h3>
+                    </a>
+                    <div class="sub_area"></div>
+                    <div class="submenu_area">
+                        <div class="sub_wrap">
+                            <ul class="sub">    
+                                <li>
+                                    <a href="nexon_games_brand.html" title="넥슨게임즈">넥슨게임즈</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="game.html">
+                        <h3>게임</h3>
+                    </a>
+                    <div class="sub_area"></div>
+                    <div class="submenu_area">
+                        <div class="sub_wrap">
+                            <ul class="sub">
+                                <li><a href="v4.html">V4</a></li>
+                                <li><a href="sudden_attack.html">서든어택</a></li>
+                                <li><a href="blue_archive.html">블루아카이브</a></li>
+                                <li><a href="hit2.html">히트2</a></li>
+                                <li><a href="veiled_experts.html">베일드 엑스퍼트</a></li>
+                                <li><a href="the_first_descendant.html">퍼스트 디센던트</a></li>
+                                <li><a href="gotsome.html">갓썸</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="employment.html">
+                        <h3>인재채용</h3>
+                    </a>
+                    <div class="sub_area"></div>
+                    <div class="submenu_area">
+                        <div class="sub_wrap">
+                            <ul class="sub">
+                                <li><a href="corporate_culture.html">기업문화</a></li>
+                                <li><a href="people-culture.html">피플&컬처</a></li>
+                                <li><a href="welfare.html">복지</a></li>
+                                <li><a href="employment.html">채용</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="investment.html">
+                        <h3>투자정보</h3>
+                    </a>
+                    <div class="sub_area"></div>
+                    <div class="submenu_area">
+                        <div class="sub_wrap">
+                            <ul class="sub">
+                                <li><a href="governance.html">기업지배구조</a></li>
+                                <li><a href="stock_price_information.html">주가정보</a></li>
+                                <li><a href="financial_information">재무정보</a></li>
+                                <li><a href="a_public_notice-announcement.html">공시/공고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="media.html">
+                        <h3>미디어</h3>
+                    </a>
+                    <div class="sub_area"></div>
+                    <div class="submenu_area">
+                        <div class="sub_wrap">
+                            <ul class="sub">
+                                <li><a href="news.html">뉴스</a></li>
+                                <li><a href="press_release.html">보도자료</a></li>
+                                <li><a href="multimedia.html">멀티미디어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 메인영역 -->
+    <main>
+        <!-- 슬라이드 영역 -->
+        <article class="mslide_box">
+            <div class="mslide">
+                <ul class="slide_main">
+                    <li class="slide slide01">
+                        <a href="https://bluearchive.nexon.com/home">
+                            <div class="slide_title_txt">
+                                <h2>블루아카이브</h2>
+                                <p>Blue archive</p>
+                            </div>
+                            <p class="Genre_txt">수집형 RPG | 모바일</p>
+                            <img src="./images/blue_archive.jpg" alt="블루아카이브">
+                        </a>
+                    </li>
+                    <li class="slide slide02">
+                        <a href="https://godsome.nexon.com/">
+                            <div class="slide_title_txt">
+                                <h2>갓썸 : 클래시 오브 갓</h2>
+                                <p>GODSOME : Clash of Gods</p>
+                            </div>
+                            <p class="Genre_txt">MMORTS | 모바일</p>
+                            <img src="./images/zeus_1.jpg" alt="갓썸">
+                        </a>
+                    </li>
+                    <li class="slide slide03">
+                        <a href="https://hit2.nexon.com/pre-register">
+                            <div class="slide_title_txt">
+                                <h2>히트2</h2>
+                                <p>HIT2</p>
+                            </div>
+                            <p class="Genre_txt">Full-3D MMORPG | 모바일·PC</p>
+                            <img src="./images/main_slide.jpg" alt="히트2">
+                        </a>
+                    </li>
+                    <li class="slide slide04">
+                        <a href="https://sa.nexon.com/main/index.aspx">
+                            <div class="slide_title_txt">
+                                <h2>서든어택</h2>
+                                <p>Sudden Attack</p>
+                            </div>
+                            <p class="Genre_txt">No.1 FPS Game | PC</p>
+                            <img src="./images/sudden_attack_b.jpg" alt="서든어택">
+                        </a>
+                    </li>
+                    <li class="slide slide05">
+                        <a href="https://tfd.nexon.com/ko/cbt">
+                            <div class="slide_title_txt">
+                                <h2>퍼스트 디센던트</h2>
+                                <p>THE FIRST DESCENDANT</p>
+                            </div>
+                            <p class="Genre_txt">온라인 루트슈터 | PC·콘솔</p>
+                            <img src="./images/first_descendant.jpg" alt="퍼스트 디센던트">
+                        </a>
+                    </li>
+                    <li class="slide slide06">
+                        <a href="https://v4.nexon.com/">
+                            <div class="slide_title_txt">
+                                <h2>V4</h2>
+                                <p></p>
+                            </div>
+                            <p class="Genre_txt">Full-3D MMORPG | 모바일</p>
+                            <img src="./images/start_banner_background.png" alt="V4">
+                        </a>
+                    </li>
+                    <li class="slide slide07">
+                        <a href="https://vx.nexon.com/">
+                            <div class="slide_title_txt">
+                                <h2>베일드 엑스퍼트</h2>
+                                <p>VEILED EXPERTS</p>
+                            </div>
+                            <p class="Genre_txt">TPS Game | PC</p>
+                            <img src="./images/project_d_new.jpg" alt="베일드 엑스퍼트">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="slide_bottom">
+                    <li class="on">블루아카이브</li>
+                    <li>갓썸</li>
+                    <li>HIT2</li>
+                    <li>서든어택</li>
+                    <li>퍼스트 디센던트</li>
+                    <li>V4</li>
+                    <li>베일드 엑스퍼트</li>
+                </ul>
+            </div>
+        </article>
+        <!-- 브랜드 영역 -->
+        <article class="brand_box">
+            <div class="brand">
+                <div class="brand_main">
+                    <h2>We Make Games Better</h2>
+                    <h2>NEXON GAMES</h2>
+                </div>
+                <div class="brand_center">
+                    <div class="brand_left">
+                        <ul>
+                            <li>우리는 더 좋은 게임(Better Game)을<br>만들고 세상에 보여주기 위해 모였습니다.</li>
+                            <li>유저가 더 즐겁게 게임을 즐길 수 있도록,<br>세상보다 먼저 한 발자국 더 나아갑니다.</li>
+                            <li>넥슨게임즈의 방식으로<br>더 좋은 게임을 만듭니다.</li>
+                        </ul>
+                    </div>
+                    <img src="./images/main_mid_img_01_new.png" alt="브랜드 이미지" class="brand_right">
+                </div>
+            </div>
+        </article>
+        <!-- 게임 영역 -->
+        <article class="game_box">
+            <div class="game">
+                <div class="game_top">
+                    <div class="game_color_box"></div>
+                    <div class="game_top_box">
+                        <div class="game_main_logo" title="넥슨게임즈 로고"></div>
+                        <div class="game_content">
+                            <h2 class="g_en">nexon games</h2>
+                            <h2 class="g_ko">넥슨 게임즈</h2>
+                            <input type="button" value="게임 더보기">
+                        </div>
+                        <p>일상을 뛰어넘는 참신한 <span>재미</span>를 만듭니다.<br>놀라운 경험을 선사하는 새로운 <span>세계</span>를 창조합니다.</p>
+                    </div>
+                </div>
+                <div class="gslide">
+                    <ul class="gslide_main">
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/blue_archive.jpg" alt="블루아카이브">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>블루아카이브</h2>
+                                <p class="Genre_txt">수집형 RPG</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/zeus_1.jpg" alt="갓썸">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>갓썸 : 클래시 오브 갓</h2>
+                                <p class="Genre_txt">MMORTS</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/main_slide.jpg" alt="히트2">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>히트2</h2>
+                                <p class="Genre_txt">Full-3D MMORPG</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/sudden_attack_b.jpg" alt="서든어택">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>서든어택</h2>
+                                <p class="Genre_txt">No.1 FPS Game</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/first_descendant.jpg" alt="퍼스트 디센던트">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>퍼스트 디센던트</h2>
+                                <p class="Genre_txt">온라인 루트슈터</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/start_banner_background.png" alt="V4">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>V4</h2>
+                                <p class="Genre_txt">Full-3D MMORPG</p>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="gslide_content">
+                                <img src="./images/project_d_new.jpg" alt="베일드 엑스퍼트">
+                            </div>
+                            <div class="gslide_text">
+                                <h2>베일드 엑스퍼트</h2>
+                                <p class="Genre_txt">TPS Game</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="g_btn">
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </article>
+        <!-- 뉴스 영역 -->
+        <article class="news_box">
+            <div class="news">
+                <div class="news_back_img">
+                    <h3>nexen media</h3>
+                    <h2>넥슨 새소식</h2>
+                    <div class="news_grid">
+                        <ul>
+                            <li>
+                                <a href="news1.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_01.jpg" alt="뉴스 : 이름값 한 ‘히트2’, 넥슨게임즈 3분기 실적 기대감 고조">
+                                    </div>
+                                    <div class="news_text">
+                                        <h3>이름값 한 ‘히트2’, 넥슨게임즈 3분기 실적 기대감 고조</h3>
+                                        <p>넥슨게임즈 신작 '히트2(HIT2)'가 이름값을 해냈다. 초대형 지적재산권(IP)로 꼽히는 '히트' DNA를 후</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news2.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_01.jpg" alt="뉴스 : 넥슨게임즈, 출범 반년만에 핵심 개발사 '우뚝'">
+                                    </div>
+                                    <div class="news_text">
+                                        <h3>넥슨게임즈, 출범 반년만에 핵심 개발사 '우뚝'</h3>
+                                        <p>넥슨게임즈가 출범 반년만에 넥슨의 핵심 개발 자회사로 떠올랐다. 7일 넥슨에 따르면 넥슨게임즈는 지난 3월 31</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news3.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_03.jpg" alt="뉴스 : 넥슨, 이제는 게임디렉터가 직접 나선다...실시간 '피드백">
+                                    </div>
+                                    <div class="news_text" title="뉴스">
+                                        <h3>넥슨, 이제는 게임디렉터가 직접 나선다...실시간 '피드백</h3>
+                                        <p>넥슨은 국내를 대표하는 게임사 중 하나로 다양한 게임을 이용자들에게 선보이고 있다.  또한 이용자와의</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news4.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_04.jpg" alt="뉴스 : 언리얼 엔진 4에서 언리얼 엔진 5로 전환, '퍼스트 디센던트' 개발기">
+                                    </div>
+                                    <div class="news_text" title="뉴스">
+                                        <h3>언리얼 엔진 4에서 언리얼 엔진 5로 전환, '퍼스트 디센던트' 개발기</h3>
+                                        <p>언리얼 엔진을 이용해서 제작되는 다양한 사례들을 살펴볼 수 있는 행사 '언리얼 서밋 2022'의 2일차. 게임</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news5.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_01.jpg" alt="뉴스 : 새 수익모델에 '배틀패스' 뒷돈 없는 '직접 후원' 주목">
+                                    </div>
+                                    <div class="news_text">
+                                        <h3>새 수익모델에 '배틀패스' 뒷돈 없는 '직접 후원' 주목</h3>
+                                        <p>게임 내 랜덤박스 및 확률형 아이템의 규제와 소비자 불만 목소리가 높아지는 가운데 주요 게임사들이 '배틀패스'</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news6.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_06.jpg" alt="뉴스 : 넥슨 '히트2' 캐릭터 선물하기 업데이트,게임 외적 문화 안으로 포용한다">
+                                    </div>
+                                    <div class="news_text">
+                                        <h3>넥슨 '히트2' 캐릭터 선물하기 업데이트,게임 외적 문화 안으로 포용한다</h3>
+                                        <p>넥슨은 28일 자사가 서비스하는 모바일 MMORPG '히트2'에 첫 대규모 업데이트를 진행했다.이번 업데이트에서</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news7.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_07.png" alt="뉴스 : 신작 풍성 올 가을은 넥슨과 크래프톤의 계절">
+                                    </div>
+                                    <div class="news_text">
+                                        <h3>신작 풍성 올 가을은 넥슨과 크래프톤의 계절</h3>
+                                        <p>28일 넥슨게임즈에서 ‘언리얼 엔진을 활용한 '퍼스트 디센던트 제작기’를 주제로 언리얼 엔진을 사용해 높은 비주</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news8.html">
+                                    <div class="news_img">
+                                        <img src="./images/news_10.jpg" alt="뉴스 : 4분기 로드맵 공개 '히트2', '유저 목소리 경청할 것'">
+                                    </div>
+                                    <div class="news_text">
+                                        <h3>4분기 로드맵 공개 '히트2', '유저 목소리 경청할 것'</h3>
+                                        <p>넥슨은 23일 개발진이 직접 게임에 대한 다양한 소식을 전하는 'HIT2DAY(히트투데이)' 영상을 공개하고 개</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 정보(인재채용, 투자정보) 영역 -->
+        <article class="information_box">
+            <div class="information">
+                <div class="recruitment">
+                    <a href="employment.html">
+                        <h2>인재채용 바로가기</h2>
+                        <i class="material-icons">people</i>
+                    </a>
+                </div>
+                <div class="investment">
+                    <a href="investment.html">
+                        <h2>투자정보 바로가기</h2>
+                        <i class="fa fa-bar-chart"></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- 푸터영역 -->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_box">
+                <a href="notice.html">[공지] 10/13(목) 넥슨 정기점검 안내</a>
+                <a href="https://www.facebook.com/NEXON.KR" title="페이스북"><i class='fab fa-facebook-f'></i></a>
+                <a href="https://twitter.com/NEXON_KR" title="트위터"><i class='fab fa-twitter'></i></a>
+                <a href="https://www.youtube.com/user/NEXONKR" title="유튜브"><i class='fab fa-youtube'></i></a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_box">
+                <ul>
+                    <li><a href="http://company.nexon.com/">회사소개</a></li>
+                    <li><a href="https://career.nexon.com/common/main">채용안내</a></li>
+                    <li><a href="http://company.nexon.com/Company/Ethics/about/about.aspx">윤리경영</a></li>
+                    <li><a href="https://member.nexon.com/policy/stipulation.aspx">이용약관</a></li>
+                    <li><a href="https://member.nexon.com/policy/privacy.aspx">개인정보처리방침</a></li>
+                    <li><a href="https://advertise.nexon.com/advertise/advertise.aspx">광고문의</a></li>
+                    <li><a href="https://help.nexon.com/">고객센터</a></li>
+                    <li><a href="https://www.nexon.com/Home/Sitemap">전체서비스</a></li>
+                </ul>
+                <div class="footer_bottom_text">
+                    <p>넥슨게임즈 SEOUL<br>서울특별시 강남구 남부순환로 2621 디앤오 강남빌딩 5층</p>
+                    <p>넥슨게임즈 PANGYO<br>경기 성남시 분당구 판교로 256번길 25 판교 테크노벨리</p>
+                </div>
+                <a href="https://www.gdweb.co.kr/sub/view.asp?displayrow=60&Txt_key=all&Txt_word=&Txt_agnumber=&Txt_fgbn=5&Txt_bcode1=020810001&Txt_gbflag=&Txt_bcode2=&Txt_bcode3=&Txt_bcode4=&Txt_bcode5=&Page=1&str_no=17268">
+                    <img src="./images/winner_logo.jpg" alt="GEWEB선정작">
+                </a>
+                <p>&copy; Nexon Games. All Rights Reserved.</p>
+                <div class="familysite">
+                    <h2>관련사이트</h2>
+                    <ul>
+                        <li><a href="http://company.nexon.com/" title="넥슨코리아">넥슨코리아</a></li>
+                        <li><a href="http://www.nexon-networks.com/" title="넥슨네트웍스">넥슨네트웍스</a></li>
+                        <li><a href="https://www.neople.co.kr/neople/main/" title="네오플">네오플</a></li>
+                        <li><a href="http://www.nexon-communications.com/" title="넥슨커뮤니케이션즈">넥슨커뮤니케이션즈</a></li>
+                        <li><a href="http://www.nmp-corp.com/" title="엔미디어플랫폼">엔미디어플랫폼</a></li>
+                        <li><a href="https://company.nexon.com/" title="넥슨스페이스">넥슨스페이스</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
